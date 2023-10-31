@@ -1,0 +1,109 @@
+/* Styles généraux */
+body {
+    background-color: rgb(247, 230, 196);
+    color: rgb(255, 244, 244);
+    font-family: 'Neuton', serif;
+}
+
+/* Styles pour les en-têtes */
+h1 {
+    color: rgb(96, 108, 93);
+    font-size: 50px;
+}
+
+/* Styles pour les sous-titres */
+h2 {
+    color: rgb(241, 195, 118);
+    font-size: 30px;
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 20px;
+    color: rgb(255, 244, 244);
+}
+
+/* Styles pour les liens */
+a {
+    text-decoration: none;
+    color: rgb(217, 202, 179);
+    font-size: 20px;
+}
+
+a:hover {
+    color: rgb(241, 195, 118);
+}
+
+/* Styles pour les mises en page et les conteneurs */
+.container {
+    width: 650px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Styles pour les boîtes vertes */
+.box-green {
+    background-color: rgb(96, 108, 93);
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 20px 0px;
+    border-radius: 30px;
+}
+
+/* Styles pour les images rondes */
+.img-circle {
+    border-radius: 50%;
+    width: 150px;
+}
+
+/* Styles pour les boutons */
+.btn-button {
+    background-color: rgb(136, 74, 57);
+    padding: 5px 10px;
+    border-radius: 8%;
+    color: rgb(255, 244, 244);
+}
+
+btn-button:hover {
+    background-color: red;
+}
+
+/* Styles pour les réseaux sociaux */
+.reseaux {
+    list-style: none;
+    padding-left: 0;
+}
+
+.reseaux li {
+    display: inline;
+    padding: 20px;
+}
+
+.reseaux i {
+    font-size: 30px;
+}
+
+/* Styles spécifiques pour un élément ayant l'ID "introduction p" */
+#introduction p {
+    margin-bottom: 40px;
+}
+
+/* Media Query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p, a {
+        font-size: 18px;
+    }
+}
