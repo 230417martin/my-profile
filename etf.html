@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mes ETF : Dossier personnel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;1,9..144,460&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-etf">
+<div class="sheet">
+
+  <a class="back" href="index.html">← Retour au dossier</a>
+
+  <header class="masthead wide-masthead">
+    <h1>Mes ETF</h1>
+    <p class="role">Un <span class="hl">ETF</span>, pour <em>Exchange Traded Fund</em>, est un fonds qui copie la performance d'un <span class="hl">indice boursier</span> (par exemple le CAC 40, le S&amp;P 500 ou le MSCI World) au lieu d'essayer de faire mieux que lui. On l'achète et on le vend en Bourse comme une simple action, mais une seule ligne suffit pour être exposé en même temps à des dizaines, des centaines, parfois des milliers d'entreprises différentes.</p>
+
+    <dl class="facts">
+      <div><dt>Frais annuels ETF</dt><dd>0,10 – 0,40 %</dd></div>
+      <div><dt>Fonds géré activement</dt><dd>1,5 – 2,5 %</dd></div>
+      <div><dt>Diversification</dt><dd>Dès le 1<sup>er</sup> euro</dd></div>
+      <div><dt>Performance</dt><dd>= celle du marché</dd></div>
+    </dl>
+
+    <p class="role">Sur longue durée, la <span class="hl">grande majorité</span> des fonds gérés activement font moins bien que leur indice de référence une fois les frais payés : c'est la raison principale qui pousse à privilégier les ETF pour un portefeuille pensé pour durer <span class="hl">au moins 10 ans</span>.</p>
+    <p class="role">Voici les ETF les plus intéressants à loger dans un PEA, complétés par un ETF matières premières qui doit lui rester en CTO, classés par thématique. <strong>23 fiches</strong> au total, avec pour chacune l'indice répliqué, les pays, les secteurs, les principales positions et la performance sur longue durée.</p>
+
+    <div class="chips">
+      <span class="chip">23 ETF</span>
+      <span class="chip">PEA + CTO</span>
+      <span class="chip warm">DCA mensuel</span>
+      <span class="chip">Horizon 10 ans+</span>
+    </div>
+
+    <div class="dca-widget glass-card">
+      <div class="dca-header">
+        <div>
+          <label class="dca-label" for="dca-amount">Montant investi chaque mois</label>
+          <div class="dca-amount-row">
+            <input type="range" id="dca-amount" min="50" max="1000" step="50" value="300">
+            <output id="dca-amount-out">300 €</output>
+          </div>
+        </div>
+        <div class="dca-highlight">
+          <span class="dca-highlight-label">Valeur estimée à 40 ans</span>
+          <span class="dca-highlight-value" id="dca-40y-value">—</span>
+        </div>
+      </div>
+      <div class="dca-chart" id="dca-chart"></div>
+      <div class="dca-legend">
+        <span class="li-invested">Montant versé</span>
+        <span class="li-gain">Plus-value estimée</span>
+      </div>
+      <p class="dca-note">Simulation illustrative : hypothèse d'un rendement annuel moyen de 8&nbsp;% (proche de la moyenne historique du S&amp;P&nbsp;500 dividendes réinvestis), versements mensuels constants, hors frais et fiscalité. Les performances passées ne préjugent pas des performances futures.</p>
+    </div>
+  </header>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Actions américaines : S&amp;P 500</div>
+  </div>
+
+  <a class="entry" href="etf-sp500-pea.html">
+    <div class="entry-head">
+      <h2>iShares S&amp;P 500 Swap PEA</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Les 500 plus grandes entreprises américaines, en une ligne à faible coût. Le cœur de l'exposition actions US.</p>
+  </a>
+
+  <a class="entry" href="etf-amundi-sp500.html">
+    <div class="entry-head">
+      <h2>Amundi PEA S&amp;P 500</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Le même S&amp;P 500, mais avec douze ans de recul et un encours bien supérieur au fonds iShares.</p>
+  </a>
+
+  <a class="entry" href="etf-bnp-sp500.html">
+    <div class="entry-head">
+      <h2>BNP Paribas Easy S&amp;P 500</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Le plus gros et le plus ancien des trackers S&amp;P 500 PEA, avec un swap multi-contreparties plus transparent.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Actions américaines : Nasdaq et technologie</div>
+  </div>
+
+  <a class="entry" href="etf-pea-nasdaq100.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Nasdaq-100</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Les 100 plus grandes valeurs non financières du Nasdaq, un pari concentré sur la technologie, bien plus volatil que le S&amp;P 500.</p>
+  </a>
+
+  <a class="entry" href="etf-us-tech-screened.html">
+    <div class="entry-head">
+      <h2>Amundi PEA US Tech Screened</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Un Nasdaq filtré selon des critères environnementaux et sociaux, à une soixantaine de valeurs seulement : quasiment un jumeau du Nasdaq-100, mais encore plus concentré.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Actions américaines : marché large et petites entreprises</div>
+  </div>
+
+  <a class="entry" href="etf-msci-usa-esg.html">
+    <div class="entry-head">
+      <h2>Amundi PEA MSCI USA ESG Selection</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Le marché américain filtré selon des critères environnementaux et sociaux, avec un poids maximum par entreprise : une façon différente de construire l'indice, par rapport au S&amp;P 500 classique.</p>
+  </a>
+
+  <a class="entry" href="etf-russell2000.html">
+    <div class="entry-head">
+      <h2>Amundi Russell 2000</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Environ 2 000 petites entreprises américaines, ce qui apporte une vraie diversification par rapport aux grandes valeurs américaines.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Monde</div>
+  </div>
+
+  <a class="entry" href="etf-world-pea.html">
+    <div class="entry-head">
+      <h2>iShares MSCI World Swap PEA</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Environ 1 500 entreprises de 23 pays développés. La brique de diversification internationale par excellence.</p>
+  </a>
+
+  <a class="entry" href="etf-pea-monde.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Monde (MSCI World)</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Le même indice MSCI World que la ligne iShares, mais chez un autre gérant : un doublon presque parfait à comparer.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Europe</div>
+  </div>
+
+  <a class="entry" href="etf-stoxx600.html">
+    <div class="entry-head">
+      <h2>BNP Paribas Easy STOXX Europe 600</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>600 grandes, moyennes et petites capitalisations européennes, dont Royaume-Uni et Suisse. L'Europe boursière au sens large.</p>
+  </a>
+
+  <a class="entry" href="etf-euro-stoxx50.html">
+    <div class="entry-head">
+      <h2>iShares Core EURO STOXX 50</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Le blue-chip de la zone euro en 50 valeurs, réplication physique intégrale.</p>
+  </a>
+
+  <a class="entry" href="etf-msci-europe.html">
+    <div class="entry-head">
+      <h2>Amundi ETF PEA MSCI Europe</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>L'Europe développée en grandes et moyennes valeurs, Royaume-Uni et Suisse compris : une alternative moins chère, mais avec moins de lignes que le STOXX 600.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Zone euro</div>
+  </div>
+
+  <a class="entry" href="etf-emu-climate.html">
+    <div class="entry-head">
+      <h2>Amundi MSCI EMU Climate Paris Aligned</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Grandes capitalisations de la zone euro, filtrées selon une trajectoire d'alignement climatique avec l'Accord de Paris.</p>
+  </a>
+
+  <a class="entry" href="etf-emu-esg-broad.html">
+    <div class="entry-head">
+      <h2>Amundi MSCI EMU ESG Broad Transition</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>La zone euro élargie, filtrée selon des critères environnementaux et sociaux : un quasi-jumeau du MSCI EMU Climate, comparé honnêtement dans la fiche.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">France</div>
+  </div>
+
+  <a class="entry" href="etf-cac40.html">
+    <div class="entry-head">
+      <h2>Amundi CAC 40</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>L'indice phare de la Bourse de Paris, 40 valeurs françaises détenues en direct : la concentration géographique la plus forte de toute la bibliothèque.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Immobilier</div>
+  </div>
+
+  <a class="entry" href="etf-immobilier-europe.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Immobilier Europe</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Les foncières cotées européennes, sensibles aux taux d'intérêt : une performance sur 5 ans franchement négative depuis la remontée des taux en 2022.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Marchés émergents</div>
+  </div>
+
+  <a class="entry" href="etf-emergents.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Emergent</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Marchés émergents au sens large : Chine, Taïwan, Corée du Sud, Inde et au-delà, logés dans un PEA grâce à un montage financier spécifique.</p>
+  </a>
+
+  <a class="entry" href="etf-asie-emergente.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Asie Emergente</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Une concentration plus poussée sur l'Asie émergente, avec un poids technologique dominant.</p>
+  </a>
+
+  <a class="entry" href="etf-emergent-emea.html">
+    <div class="entry-head">
+      <h2>Amundi PEA MSCI Emergent EMEA ESG Leaders</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Des marchés émergents hors Asie : Afrique du Sud, Arabie Saoudite, pays du Golfe. Complémentaire des émergents déjà couverts côté Asie.</p>
+  </a>
+
+  <a class="entry" href="etf-india.html">
+    <div class="entry-head">
+      <h2>Amundi MSCI India</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Un pari sur un seul pays, l'Inde. Les frais de gestion les plus élevés de la bibliothèque, et un fort chevauchement avec l'ETF Asie Émergente.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Thématique</div>
+  </div>
+
+  <a class="entry" href="etf-eau.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Eau (MSCI Water)</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Un ETF centré sur un seul secteur : les entreprises liées à l'eau (distribution, traitement, équipements), dans le monde développé et émergent.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Matières premières</div>
+  </div>
+
+  <a class="entry" href="etf-matieres-premieres.html">
+    <div class="entry-head">
+      <h2>iShares Diversified Commodity Swap</h2>
+      <span class="tag etf">ETF CTO</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Un panier large de matières premières (énergie, métaux, agriculture) qui évolue indépendamment des actions. Non éligible au PEA.</p>
+  </a>
+
+  <div class="etf-group">
+    <div class="etf-group-label">Monétaire / liquidités</div>
+  </div>
+
+  <a class="entry" href="etf-euro-court-terme.html">
+    <div class="entry-head">
+      <h2>Amundi PEA Euro Court Terme</h2>
+      <span class="tag etf">ETF PEA</span>
+      <span class="arrow">→</span>
+    </div>
+    <p>Un fonds monétaire qui capitalise les intérêts, quasiment équivalent à du cash, indexé sur le taux €STR. Sert de réserve de liquidité dans un PEA, plutôt que de moteur de performance.</p>
+  </a>
+
+  <footer>
+    <span>Dossier personnel de Martin Lebigre</span>
+    <span class="mono">MàJ : juillet 2026</span>
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var amountEl = document.getElementById('dca-amount');
+    var amountOut = document.getElementById('dca-amount-out');
+    var chartEl = document.getElementById('dca-chart');
+    var highlightEl = document.getElementById('dca-40y-value');
+    if (!amountEl || !chartEl) return;
+
+    var HORIZONS = [10, 20, 30, 40];
+    var RATE = 0.08;
+
+    function fmtEUR(n) {
+      return Math.round(n).toLocaleString('fr-FR') + ' €';
+    }
+
+    function computeFV(monthly, years) {
+      var n = years * 12;
+      var r = RATE / 12;
+      var invested = monthly * n;
+      var fv = monthly * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+      return { invested: invested, fv: fv };
+    }
+
+    function render() {
+      var monthly = parseInt(amountEl.value, 10);
+      amountOut.textContent = monthly + ' €';
+
+      var results = HORIZONS.map(function (y) {
+        var r = computeFV(monthly, y);
+        return { years: y, invested: r.invested, fv: r.fv };
+      });
+      var max = results[results.length - 1].fv;
+
+      chartEl.innerHTML = results.map(function (r) {
+        var investedPct = (r.invested / r.fv) * 100;
+        var gainPct = 100 - investedPct;
+        var trackWidth = (r.fv / max) * 100;
+        return '' +
+          '<div class="dca-row">' +
+            '<span class="dca-row-label">' + r.years + ' ans</span>' +
+            '<span class="dca-track" style="width:' + trackWidth.toFixed(1) + '%">' +
+              '<span class="dca-seg dca-seg-invested" style="width:' + investedPct.toFixed(1) + '%"></span>' +
+              '<span class="dca-seg dca-seg-gain" style="width:' + gainPct.toFixed(1) + '%"></span>' +
+            '</span>' +
+            '<span class="dca-row-val">' + fmtEUR(r.fv) + '</span>' +
+          '</div>';
+      }).join('');
+
+      if (highlightEl) {
+        highlightEl.textContent = fmtEUR(results[results.length - 1].fv);
+      }
+    }
+
+    amountEl.addEventListener('input', render);
+    render();
+  })();
+</script>
+</body>
+</html>
